@@ -1,0 +1,1 @@
+these procedures allow for volunteeres to text in there confirmation to serve the upcomming sunday
