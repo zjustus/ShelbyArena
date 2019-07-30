@@ -1,0 +1,24 @@
+/* General Styles */
+body{
+}
+
+/* Classes */
+.button{
+     background-color: black;
+     color: white;
+     text-decoration: none;
+     padding: 2pt 5pt;
+     margin: 5pt;
+     border-radius: 5pt;
+}
+.button:hover{
+     background-color: #AAA;
+     color: white;
+}
+.hidden{
+     display: none;
+}
+.title{
+}
+
+/* ID's */

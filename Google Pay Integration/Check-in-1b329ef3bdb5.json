@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "check-in-236000",
+  "private_key_id": "1b329ef3bdb5f7b802a839cc0f0a33f70e9f15f9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\REDACTED FOR SECURITY REASONS\n-----END PRIVATE KEY-----\n",
+  "client_email": "arena-check-in@check-in-236000.iam.gserviceaccount.com",
+  "client_id": "109696131853832797682",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/arena-check-in%40check-in-236000.iam.gserviceaccount.com"
+}
