@@ -1,0 +1,53 @@
+Barcode report Set up Guide for Workstation and Server: http://www.sqlservercentral.com/articles/SSRS/179338/
+	(Server already configured)
+
+* These reports must be created on a computer with visual studios AND the BarcodeLib.dll installed *
+Steps to setting up barcode report
+
+	1. add query from code.txt (in this folder) to the report properties code section
+	2. In Refrences add 
+		C:\Windows\assembly\GAC_MSIL\BarcodeLib\1.0.0.22__ef791f707232c48f\BarcodeLib.dll
+		AND
+		C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll
+	3a. add the barcode immage into your data set
+	3b. image properties as follows
+		name: whatever :P
+		image source: Database
+		MiME type: image/bmp
+		field: use an expresion as follows
+			=Code.Convert(@EncodedText varchar ,@EncodingTypeKey varchar ,@Width int ,@Height int)
+		Example
+			=Code.Convert(Fields!bc_memberID.Value ,"CODE128" ,150 ,50)
+	3c. Set the image size to origional 
+
+Barcode types to encodingTypeKey
+Type			Encoding Type Key
+Bookland/ISBN		BOOKLAND
+Codabar			Codabar
+Code 11			CODE11
+Code 39			CODE39
+Code 39 Extended	CODE39Extended
+Code 39 Mod 43		CODE39_Mod43
+**** the good ones
+Code-128		CODE128 - all 128 ASCII characters
+Code-128A		CODE128A - upper-case letters, and control characters, such as tab and new-line
+Code-128B		CODE128B - upper- and lower-case letters and some additional characters
+Code-128C		CODE128C - numbers only. It must have an even number of digits
+****
+Code-93			CODE93
+EAN-13			EAN13
+EAN-8			EAN8
+FIM			FIM
+Interleaved 2 of 5	Interleaved2of5
+ITF-14			ITF14
+JAN-13			JAN13
+LOGMARS			LOGMARS
+MSI			MSI_Mod10
+Pharmacode		PHARMACODE
+PostNet			PostNet
+Standard 2 of 5		Standard2of5
+Telepen			TELEPEN
+UPC 2 Digit Ext.	UPC_SUPPLEMENTAL_2DIGIT
+UPC 5 Digit Ext.	UPC_SUPPLEMENTAL_5DIGIT
+UPC-A			UPCA
+UPC-E			UPCE

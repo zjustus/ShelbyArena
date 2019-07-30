@@ -1,0 +1,122 @@
+Public Function Convert(Text As String, EncodingTypeKey As String,Width as Integer, Height as Integer) As Byte()
+           Dim b As System.Drawing.Bitmap
+           Dim Barcode As New BarcodeLib.Barcode
+           Barcode.Alignment = BarcodeLib.AlignmentPositions.LEFT
+           Barcode.IncludeLabel = False
+           Barcode.RotateFlipType = Drawing.RotateFlipType.RotateNoneFlipNone
+
+           If (EncodingTypeKey = "BOOKLAND") 
+                b = Barcode.Encode(BarcodeLib.TYPE.BOOKLAND, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "Codabar") 
+                b = Barcode.Encode(BarcodeLib.TYPE.Codabar, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE11") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE11, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE39") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE39, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE39Extended") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE39Extended, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE39_Mod43") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE39_Mod43, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE128") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE128, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE128A") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE128A, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE128B") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE128B, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE128C") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE128C, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "CODE93") 
+                b = Barcode.Encode(BarcodeLib.TYPE.CODE93, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "EAN13") 
+                b = Barcode.Encode(BarcodeLib.TYPE.EAN13, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "EAN8") 
+                b = Barcode.Encode(BarcodeLib.TYPE.EAN8, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "FIM") 
+                b = Barcode.Encode(BarcodeLib.TYPE.FIM, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "Interleaved2of5") 
+                b = Barcode.Encode(BarcodeLib.TYPE.Interleaved2of5, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "ITF14") 
+                b = Barcode.Encode(BarcodeLib.TYPE.ITF14, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "JAN13") 
+                b = Barcode.Encode(BarcodeLib.TYPE.JAN13, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "LOGMARS") 
+                b = Barcode.Encode(BarcodeLib.TYPE.LOGMARS, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "MSI_Mod10") 
+                b = Barcode.Encode(BarcodeLib.TYPE.MSI_Mod10, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "PHARMACODE") 
+                b = Barcode.Encode(BarcodeLib.TYPE.PHARMACODE, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "PostNet") 
+                b = Barcode.Encode(BarcodeLib.TYPE.PostNet, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "Standard2of5") 
+                b = Barcode.Encode(BarcodeLib.TYPE.Standard2of5, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "TELEPEN") 
+                b = Barcode.Encode(BarcodeLib.TYPE.TELEPEN, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "UPC_SUPPLEMENTAL_2DIGIT") 
+                b = Barcode.Encode(BarcodeLib.TYPE.UPC_SUPPLEMENTAL_2DIGIT, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "UPC_SUPPLEMENTAL_5DIGIT") 
+                b = Barcode.Encode(BarcodeLib.TYPE.UPC_SUPPLEMENTAL_5DIGIT, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "UPCA") 
+                b = Barcode.Encode(BarcodeLib.TYPE.UPCA, Text, Width, Height) 
+           End If
+
+           If (EncodingTypeKey = "UPCE") 
+                b = Barcode.Encode(BarcodeLib.TYPE.UPCE, Text, Width, Height) 
+           End If
+
+           Dim bitmapData As Byte() = Nothing
+           Using ms As New System.IO.MemoryStream()
+               b.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp)
+               bitmapData = ms.ToArray()
+           End Using
+           Return bitmapData
+       End Function

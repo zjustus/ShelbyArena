@@ -1,0 +1,17 @@
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\Release Notes.txt
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\BarcodeLibTest.exe.manifest
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\BarcodeLibTest.application
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\BarcodeLibTest.exe
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\BarcodeLibTest.pdb
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\BarcodeLib.dll
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\bin\Debug\BarcodeLib.pdb
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.csprojAssemblyReference.cache
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.TestApp.resources
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.Properties.Resources.resources
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.csproj.GenerateResource.cache
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.csproj.CoreCompileInputs.cache
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.exe.manifest
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.application
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.csproj.CopyComplete
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.exe
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLibTest\obj\Debug\BarcodeLibTest.pdb

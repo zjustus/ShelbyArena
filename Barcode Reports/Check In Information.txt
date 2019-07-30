@@ -1,0 +1,11 @@
+how barcodes read on the check-in kiosk's
+
+first it ...
+checks to see if the barcode scanned matches an Alternate ID listed on a person's record (Under Person Detail Page > Security). If it is an AltID, then it determines type (Person, Manager, then Family).
+
+If it does not match any of the AltIDs in the system, it then does a check to see if it matches a security receipt from check-in. Here's the following patterns that it checks against, based on the first letter of the barcode.
+- (C) Child Tag Barcode: C<occurrence_attendance_id>.<security_code>
+- (R) Parent Pickup Barcode: R<occurrence_attendance_id>.<security_code>
+- (M) Multiple Classes Barcode: M<occurrence_attendance_id>.<security_code> (checks person out of all classes that were checked in)
+
+Finally, if it cannot match against all of those, it will check to see if the Barcode started with a P. If so, it will get the number from the barcode and pull up that person record. So P12345 could pull up the family with person_id 12345 in it.

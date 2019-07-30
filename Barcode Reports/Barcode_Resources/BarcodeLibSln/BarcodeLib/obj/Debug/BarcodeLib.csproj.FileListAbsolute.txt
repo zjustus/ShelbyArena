@@ -1,0 +1,6 @@
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLib\bin\Debug\Release Notes.txt
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLib\bin\Debug\BarcodeLib.dll
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLib\bin\Debug\BarcodeLib.pdb
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLib\obj\Debug\BarcodeLib.csproj.CoreCompileInputs.cache
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLib\obj\Debug\BarcodeLib.dll
+C:\Users\HPEnvy\Downloads\barcode\barcode_src\BarcodeLib\obj\Debug\BarcodeLib.pdb
